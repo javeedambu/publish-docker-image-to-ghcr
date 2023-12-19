@@ -5,7 +5,7 @@ on:
 
 jobs:
   build_and_publish:
-    runs-on: ubuntue_latest
+    runs-on: ubuntu_latest
     steps:
     - uses: actions/checkout@v4
     - name: Build and push the image
