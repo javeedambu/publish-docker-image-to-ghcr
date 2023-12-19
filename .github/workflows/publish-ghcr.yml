@@ -10,6 +10,6 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build and push the image
       run: |
-        docker login --username javeed --password ${{secrets.GITHUB_TOKEN}} ghcr.io
-        docker build . --tag ghcr.io/javeed/hello-world-dhcr:latest
-        focker push  ghcr.io/javeed/hello-world-ghcr:latest
+        docker login --username javeedambu --password ${{secrets.GITHUB_TOKEN}} ghcr.io
+        docker build . --tag ghcr.io/javeedambu/hello-world-dhcr:latest
+        docker push  ghcr.io/javeedambu/hello-world-ghcr:latest
